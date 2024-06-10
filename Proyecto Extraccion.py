@@ -13,12 +13,12 @@ time.sleep(3)
 
 datos = []
 jugadores_recolectados = set()
-numero_scrolls = 20
+numero_scrolls = 20 #Estos son los scrolls que indique oara recopilar 300 datos, cuando se hagan los 20 se cierra el programa y se realiza la extraccion
 tiempo_entre_scroll = 2
 tamaño_scroll = 1205
 incremento_scroll = 50
 
-# Ciclo para poder cargar la pagina completa
+# Ciclo para poder cargar la pagina y extraer los datos correscpondientes
 scrolls_realizados = 0
 while scrolls_realizados < numero_scrolls:
     ventana = driver.execute_script("return document.body.scrollHeight")
@@ -38,7 +38,7 @@ while scrolls_realizados < numero_scrolls:
             ventana = nueva_altura
         scrolls_realizados += 1
 
-# Aqui se inicia la recoleccion de datos
+# Aqui se inicia la recoleccion de datos, no se cerrara hasta hacer los scrolls que indique
 pagina = driver.page_source
 htmlde_pagina = BeautifulSoup(pagina, 'html.parser')
 
