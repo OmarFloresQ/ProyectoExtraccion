@@ -1,4 +1,23 @@
-Por facor de ejecutar los programas en la forma que indica su nombre, los separe por 
-fases para que sean mas faciles de entender y 
-al final le adjunto mi documento final, si 
-desea que le modifiquye algo por favor de decirme.
+Por favor de descargar todos los programas y ejecutarlos de forma ordenada segun indique el nombre de cada archivo
+tambien por favor tener instaladas las librearias correspondientes, en este caso yo utilice como gestor pycharm y instale ls siguientes librerias:
+
+
+import time
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+from bs4 import BeautifulSoup
+import pandas as pd
+from selenium.webdriver.chrome.options import Options
+import mysql.connector
+import plotly.express as px
+import dash_bootstrap_components as dbc
+from dash import dcc, html, Dash, dash_table, Input, Output
+from sqlalchemy import create_engine
+
+
+Por favor intalarlas y de ser necesario segun el gestor instalar las que necesite, tambien si no desea realizar la extraccion  le adjunto el archivo csv con los datos que se extrajeron para realizar el proyecto.
+El archivo contiene 600 datos de jugadores estos datos ya estan casi limpios para su uso pero de igual manera agregue codigo de normaclizacion y de verificacion.
+
+De ante mano muchas gracias y espero le guste mi proyecto, lo seguire mejorando en cuestion de diseño fuera de la clase pero por ahora por el tiempo y por las circunstancias es lo mejor que puedo hacer, gracias y buen dia.
+
